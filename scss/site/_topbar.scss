@@ -15,6 +15,41 @@
 	background: #202020;
 }
 
+// Take out some junk if it's using social icons
+#menu-social-icons {
+	.divider {
+		display: none;
+	}
+}
+
+// Let's define the logo size
+.logo {
+  width: 40px;
+  margin-left: 5px;
+}
+
+// We only want our top bar to behave like it does during certain screen sizes
+@media only screen and (min-width: 40.063em) {
+  
+  .top-bar {
+    height: 6rem;
+    padding-top: 3rem;
+    position: relative;
+  }
+
+  .top-bar-menu.left {
+    position: absolute;
+    right: 0;
+    top: -45px;
+  }
+  
+  .logo {
+    width: 70px;
+    margin-top: -2.3rem;
+  }
+}
+
+
 // Switch between the mobile menu (tab-bar) and desktop menu (topbar) based on a custom $topbar-breakpoint value.
 // The $topbar-breakpoint can be edited in _custom-settings.scss. 
 
