@@ -6,15 +6,25 @@ get_header();
 
 
 <section class="hero">
+  
   <div class="row intro">
+    
     <div class="small-centered medium-uncentered medium-6 large-7 columns">
       <h1>Your New Home <br> Just Around the Corner</h1>
       <p>The apartments at Squarefoot are centrally located, fairly priced, and endlessly comfortable. Finding your new home has never been so easy.</p>
     </div>
+    
     <div class="small-centered medium-uncentered medium-6 large-5 columns">
       <div class="tech-img"></div>
     </div>
+    
+    <div class="button-group" data-grouptype="OR">
+      <button href="#" class="small button primary radius">See the Details</button>
+      <button href="#" class="small button success radius">Schedule a Tour</button>
+    </div>
+      
   </div>
+  
 </section>
 
 
