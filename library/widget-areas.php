@@ -35,6 +35,17 @@ function foundationpress_sidebar_widgets() {
 	  'description' => __( 'Add a text widget to the Home Hero section', 'foundationpress' ),
 	  'before_title' => '<h1>',
 	  'after_title' => '</h1>',
+	  'before_widget' => '<div>',
+	  'after_widget' => '</div>',
+	));
+
+
+	register_sidebar(array(
+	  'id' => 'home-hero-buttons',
+	  'name' => __( 'Home Hero Buttons', 'foundationpress' ),
+	  'description' => __( 'Add a text widget to add buttons to the Home Hero section', 'foundationpress' ),
+	  'before_widget' => '<div class="button-group" data-grouptype="OR">',
+	  'after_widget' => '</div>',
 	));
 
 }

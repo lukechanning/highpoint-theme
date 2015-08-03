@@ -26,10 +26,11 @@ get_header();
       </div>
     </div>
     
-    <div class="button-group" data-grouptype="OR">
-      <button href="#" class="small button primary radius">See the Details</button>
-      <button href="#" class="small button success radius">Schedule a Tour</button>
-    </div>
+    <?php
+      if ( ! dynamic_sidebar('home-hero-buttons') ) :
+        dynamic_sidebar('home-hero-buttons');
+      endif;
+    ?>
       
   </div>
   
