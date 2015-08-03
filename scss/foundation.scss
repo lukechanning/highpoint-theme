@@ -58,14 +58,15 @@
 
 @import "../assets/fontawesome/scss/font-awesome.scss";
 
-
 /*
   My custom styles:
   Add your scss files below to structure your project styles
 */
 
 @import "site/global";
+@import "site/typography";
 @import "site/wp-admin";
 @import "site/topbar";
 @import "site/hero";
+@import "site/home-middle";
 @import "site/footer";

@@ -1,0 +1,18 @@
+//Let's add some Google Fonts into the mixture
+
+    @import url(http://fonts.googleapis.com/css?family=Roboto|Open+Sans);
+
+//Let's give ourselves some global variables for our Google Fonts
+
+    $Robot: 'Roboto', sans-serif;
+    $Open: 'Open Sans', sans-serif;
+    
+//Let's detail some of that fontage, now
+
+    h1,h2,h3,h4,h5,h6 {
+        font-family: $Robot;
+    }
+    
+    p, a, span, button, .button {
+        font-family: $Open;
+    }
