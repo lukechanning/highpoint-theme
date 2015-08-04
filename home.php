@@ -5,20 +5,34 @@ get_header();
 ?>
 
 <?php //Let's add our Hero section ?>
-
-<section class="hero">
   
-  <?php get_template_part( 'parts/home-hero' ); ?>
-  
-</section>
+  <section class="hero">
+    
+    <?php get_template_part( 'parts/home-hero' ); ?>
+    
+  </section>
 
 <?php //Now, let's throw in our middle text & photo section ?>
 
-<section class="home-middle">
+  <section class="home-middle">
+    
+    <?php get_template_part( 'parts/home-middle' ); ?>
+    
+  </section>
   
-  <?php get_template_part( 'parts/home-middle' ); ?>
-  
-</section>
+<?php //Time to round it all out with a Home CTA section ?>
+
+  <section class="home-cta" style="
+  <?php
+  if( get_theme_mod( 'squarefoot_cta') ) :
+      echo 'background-image:url(' . esc_url( get_theme_mod( 'squarefoot_cta' ) ) . ');';
+    else : 
+      echo 'background-image: url(/wp-content/themes/squarefoot/assets/img/cta-bg.jpg);"';
+    endif;
+    ?>
+    ">
+    <?php get_template_part('parts/home-cta'); ?>
+  </section>
 
 <?php
   get_footer();

@@ -11,7 +11,7 @@
   <div class="row cards">
     
   <?php //First card ?>
-    <div class="large-4 columns">
+    <div class="large-4 small-12 columns">
       <div class="image-wrapper overlay-slide-in-left">
         
         <?php
@@ -34,7 +34,7 @@
     </div>
     
     <?php //Second Card ?>
-      <div class="large-4 columns">
+      <div class="large-4 small-12 columns">
         <div class="image-wrapper overlay-slide-in-left">
         
            <?php
@@ -57,7 +57,7 @@
       </div> 
     
     <?php //Third Card ?>
-      <div class="large-4 columns">
+      <div class="large-4 small-12 columns">
         <div class="image-wrapper overlay-slide-in-left">
            
             <?php

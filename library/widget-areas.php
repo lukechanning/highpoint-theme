@@ -87,6 +87,17 @@ function foundationpress_sidebar_widgets() {
 	  'before_title' => '<h2>',
 	  'after_title' => '</h2>'
 	));
+	
+	register_sidebar(array(
+	  'id' => 'home-cta-content',
+	  'name' => __( 'Home CTA', 'foundationpress' ),
+	  'description' => __( 'Add a text widget to display the Home CTA Content', 'foundationpress' ),
+	  'before_widget' => '<div class="callout-card-content">',
+	  'after_widget' => '</div>',
+	  'before_title' => '<h3 class="lead">',
+	  'after_title' => '</h3>'
+	));
+	
 }
 
 add_action( 'widgets_init', 'foundationpress_sidebar_widgets' );

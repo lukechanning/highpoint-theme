@@ -72,6 +72,20 @@ function squarefoot_customize_register( $wp_customize ) {
     'section' => 'squarefoot_card_three_section',
     'settings' => 'squarefoot_card_three',
     ) ) );
+    
+    //Add Home Card Three
+    $wp_customize->add_section( 'squarefoot_cta_section' , array(
+    'title'       => __( 'Squarefoot CTA Image', 'squarefoot' ),
+    'priority'   => 30,
+    'description' => 'Upload an image to the CTA section of the homepage',
+    ) );
+    $wp_customize->add_setting( 'squarefoot_cta' );
+    $wp_customize->add_control( new WP_Customize_Image_Control(
+    $wp_customize, 'squarefoot_cta', array(
+    'label'   => __( 'Home CTA Background Image', 'themeslug' ),
+    'section' => 'squarefoot_cta_section',
+    'settings' => 'squarefoot_cta',
+    ) ) );
 
 }
 add_action( 'customize_register', 'squarefoot_customize_register' );
