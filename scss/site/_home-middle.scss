@@ -4,10 +4,31 @@
         padding: 3rem 0 5rem 0;
         text-align: center;
         h2 {
+            position: relative;
             font-family: $Robot;
             font-size: 2.6rem;
             font-weight: 600;
             text-shadow: 0 1px 1px rgba(25,25,25,0.25);
+        }
+        .middle {
+          padding: 1rem;
+          .lined {
+            &:after,&:before {
+              content: '';
+              display: block;
+              position: absolute;
+              height: 2px;
+              width: 50%;
+              left: 25%;
+              background-color: lighten($black, 10%);
+            }
+            &:after {
+              bottom: 0;
+            }
+            &:before {
+              top: 0;
+            }
+          }
         }
     }
     
@@ -43,6 +64,7 @@
           img {
             transition: all 0.3s ease-in-out;
             min-width: 700px;
+            max-height: 500px;
           }
           
           .image-overlay-content {
@@ -72,7 +94,7 @@
             display: inline-block;
             text-decoration: none;
             padding: 7px 14px; 
-            background: $black;
+            background: $blue;
             color: $white;
             text-transform: uppercase;
             box-shadow: 0 0 1px $black;
