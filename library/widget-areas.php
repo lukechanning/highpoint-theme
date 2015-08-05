@@ -20,11 +20,31 @@ function foundationpress_sidebar_widgets() {
 	));
 
 	register_sidebar(array(
-	  'id' => 'footer-widgets',
-	  'name' => __( 'Footer widgets', 'foundationpress' ),
+	  'id' => 'footer-widget-one',
+	  'name' => __( 'Footer widget One', 'foundationpress' ),
 	  'description' => __( 'Drag widgets to this footer container', 'foundationpress' ),
-	  'before_widget' => '<article id="%1$s" class="large-4 columns widget %2$s">',
-	  'after_widget' => '</article>',
+	  'before_widget' => '<div>',
+	  'after_widget' => '</div>',
+	  'before_title' => '<h6>',
+	  'after_title' => '</h6>',
+	));
+	
+	register_sidebar(array(
+	  'id' => 'footer-widget-two',
+	  'name' => __( 'Footer widget Two', 'foundationpress' ),
+	  'description' => __( 'Drag widgets to this footer container', 'foundationpress' ),
+	  'before_widget' => '<div>',
+	  'after_widget' => '</div>',
+	  'before_title' => '<h6>',
+	  'after_title' => '</h6>',
+	));
+	
+	register_sidebar(array(
+	  'id' => 'footer-widget-three',
+	  'name' => __( 'Footer widget Three', 'foundationpress' ),
+	  'description' => __( 'Drag widgets to this footer container', 'foundationpress' ),
+	  'before_widget' => '<div>',
+	  'after_widget' => '</div>',
 	  'before_title' => '<h6>',
 	  'after_title' => '</h6>',
 	));

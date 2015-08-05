@@ -12,10 +12,28 @@
 ?>
 
 </section>
-<footer class="row">
-	<?php do_action( 'foundationpress_before_footer' ); ?>
-	<?php dynamic_sidebar( 'footer-widgets' ); ?>
-	<?php do_action( 'foundationpress_after_footer' ); ?>
+
+<footer class="footer">
+  <div class="row">
+    <div class="small-12 medium-6 large-5 columns">
+      <?php if ( ! dynamic_sidebar('footer-widget-one')) :
+      		dynamic_sidebar('footer-widget-one');
+		endif;
+		?>
+    </div>
+    <div class="small-12 medium-6 large-4 columns">
+    	<?php if ( ! dynamic_sidebar('footer-widget-two')) :
+      		dynamic_sidebar('footer-widget-two');
+		endif;
+		?>
+      </div>
+    <div class="small-12 medium-12 large-3 columns">
+    	<?php if ( ! dynamic_sidebar('footer-widget-three')) :
+      	dynamic_sidebar('footer-widget-three');
+		endif;
+		?>
+    </div>
+  </div>
 </footer>
 <a class="exit-off-canvas"></a>
 
