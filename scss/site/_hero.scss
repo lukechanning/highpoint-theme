@@ -1,6 +1,7 @@
 .hero {
   position: relative;
-  background: url('https://download.unsplash.com/38/HBzQnOQ6CWhlNi1YwAxZ_italy.jpg') no-repeat center center;
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   height: 100vh;
   text-align: center;

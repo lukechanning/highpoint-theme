@@ -17,7 +17,7 @@ function squarefoot_customize_register( $wp_customize ) {
     'settings' => 'squarefoot_logo',
     ) ) );
     
-    //Add Home Hero Image
+     //Add Home Hero Image
     $wp_customize->add_section( 'squarefoot_home_hero_section' , array(
     'title'       => __( 'Squarefoot Hero Image', 'squarefoot' ),
     'priority'   => 30,
@@ -43,6 +43,20 @@ function squarefoot_customize_register( $wp_customize ) {
     'label'   => __( 'Home Card One Image', 'themeslug' ),
     'section' => 'squarefoot_card_one_section',
     'settings' => 'squarefoot_card_one',
+    ) ) );
+    
+    //Add Home Hero BG
+    $wp_customize->add_section( 'squarefoot_hero_bg_section' , array(
+    'title'       => __( 'Squarefoot Hero BG', 'squarefoot' ),
+    'priority'   => 30,
+    'description' => 'Upload an image to add to the hero homepage',
+    ) );
+    $wp_customize->add_setting( 'squarefoot_hero_bg' );
+    $wp_customize->add_control( new WP_Customize_Image_Control(
+    $wp_customize, 'squarefoot_hero_bg', array(
+    'label'   => __( 'Home Hero BG', 'themeslug' ),
+    'section' => 'squarefoot_hero_bg_section',
+    'settings' => 'squarefoot_hero_bg',
     ) ) );
     
     //Add Home Card Two
