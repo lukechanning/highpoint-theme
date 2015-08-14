@@ -8,18 +8,21 @@
  */
 
 get_header(); ?>
-
+	<?php while ( have_posts() ) : the_post(); ?>
+		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+				<header
+		      <?php if( get_theme_mod( 'squarefoot_hero_bg') ) :
+		        echo 'style=background-image:url("' . esc_url( get_theme_mod( 'squarefoot_hero_bg' ) ) . '")';
+		      endif; ?>
+		    >
+				<h1 class="entry-title"><?php the_title(); ?></h1>
+			</header>
 <div class="row">
 	<div class="small-12 large-8 columns" role="main">
 
 	<?php do_action( 'foundationpress_before_content' ); ?>
 
-	<?php while ( have_posts() ) : the_post(); ?>
-		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-			<header>
-				<h1 class="entry-title"><?php the_title(); ?></h1>
-				<?php foundationpress_entry_meta(); ?>
-			</header>
+
 			<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
 			<div class="entry-content">
 
@@ -40,12 +43,14 @@ get_header(); ?>
 			<?php do_action( 'foundationpress_post_before_comments' ); ?>
 			<?php comments_template(); ?>
 			<?php do_action( 'foundationpress_post_after_comments' ); ?>
-		</article>
-	<?php endwhile;?>
+
 
 	<?php do_action( 'foundationpress_after_content' ); ?>
 
 	</div>
 	<?php get_sidebar(); ?>
 </div>
+		</article>
+	<?php endwhile;?>
+	
 <?php get_footer(); ?>
