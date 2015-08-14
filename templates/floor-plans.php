@@ -4,13 +4,20 @@ Template Name: Floor Plans
 */
 
 get_header(); ?>
-<div class="row">
-	<div class="small-12 large-12 columns" role="main">
-	<?php while ( have_posts() ) : the_post(); ?>
+<?php while ( have_posts() ) : the_post(); ?>
+
+	<header
+      <?php if( get_theme_mod( 'squarefoot_hero_bg') ) :
+        echo 'style=background-image:url("' . esc_url( get_theme_mod( 'squarefoot_hero_bg' ) ) . '")';
+      endif; ?>
+    >
+		<h1 class="entry-title"><?php the_title(); ?></h1>
+	</header>
+		
+	<div class="row">
+		<div class="small-12 large-12 columns" role="main">
+		
 	<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-		<header>
-			<h1 class="entry-title"><?php the_title(); ?></h1>
-		</header>
 		
 		<?php
 		// Let's start our custom loop set for the slider and vertical nav
@@ -58,7 +65,7 @@ get_header(); ?>
 					?>
 						<div class="article">
 							<div class="large-8 columns">
-								<h4><?php the_title(); ?></h4>
+								<h3><?php the_title(); ?></h3>
 								<p><?php the_content(); ?></p>
 								<div class="floorplan-info">
 									<p><span class="info-header">Price: </span><?php echo floor_plan_details_get_meta( "floor_plan_details_price" ); ?></p>
@@ -68,7 +75,8 @@ get_header(); ?>
 								</div>
 							</div>
 							<div class="large-4 columns">
-								<?php echo the_post_thumbnail('medium'); ?>
+								<?php echo the_post_thumbnail('large'); ?>
+								<a href="/contact" class="gradButton">Availability</a>
 							</div>
 						</div>
 					<?php
@@ -80,9 +88,9 @@ get_header(); ?>
 		</div>
 			
 		</article> 
-	<?php endwhile; // End the loop ?>
-	
+		
+		</div>
 	</div>
-</div>
+<?php endwhile; // End the loop ?>
 
 <?php get_footer(); ?>

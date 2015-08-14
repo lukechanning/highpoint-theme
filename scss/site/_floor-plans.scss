@@ -1,0 +1,41 @@
+body.page-template-floor-plans {
+    
+    // Custom Slick junk for our specific sliders
+    
+    .slider-nav {
+        text-align: center;
+        border-bottom: 1px solid rgba(25,25,25,0.25);
+        .slick-slide {
+            cursor: pointer;
+        }
+        img {
+            margin: 0 auto;
+            opacity: 0.6;
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+    }
+    
+    .slider-for {
+        .large-8 {
+            text-align: left;
+            h3 {
+                color: ;$black;
+            }
+        }
+        .large-4 {
+            text-align: center;
+            img {margin: 0 auto;}
+        }
+    }
+    
+    //Let's style up the content
+    
+    .info-header {
+        font-weight: 800;
+        font-size: 1.1rem;
+    }
+
+
+}

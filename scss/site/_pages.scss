@@ -1,7 +1,23 @@
 body.page, body.post {
+    //Let's add some header styling so that our shit looks fly as hell
+    header {
+        text-align: center;
+        background-position: top left;
+        background-size: cover;
+        h1 {
+            margin: 0 0 3rem 0;
+            padding: 4rem 0;
+            color: $white;
+            background: $darkGradient;
+            text-shadow: 0 1px 2px rgba(25,25,25,0.25);
+        }
+    }
+    
+    //Now let's do the content section parts
     section.container {
         .row {
             margin-top: 2rem;
         }
     }
+    
 }
