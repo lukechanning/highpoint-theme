@@ -75,7 +75,12 @@ get_header(); ?>
 								</div>
 							</div>
 							<div class="large-4 columns">
-								<?php echo the_post_thumbnail('large'); ?>
+								<a class="plan-image-link" target="_blank" href="<?php
+								$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+								echo $url;?>
+								">
+									<?php echo the_post_thumbnail('large'); ?>
+								</a>
 								<a href="/contact" class="gradButton">Availability</a>
 							</div>
 						</div>
