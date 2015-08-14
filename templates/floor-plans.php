@@ -13,24 +13,29 @@ Usage: floor_plan_details_get_meta( 'floor_plan_details_price' )
 get_header(); ?>
 <div class="row">
 	<div class="small-12 large-12 columns" role="main">
-	    
-	<?php /* Start loop */ ?>
-	<?php while ( have_posts() ) : the_post(); ?>
-		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-			<header>
-				<h1 class="entry-title"><?php the_title(); ?></h1>
-			</header>
-			<div class="entry-content">
-				<?php the_content(); ?>
-			</div>
-			<footer>
-				<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
-				<p><?php the_tags(); ?></p>
-			</footer>
-			<?php comments_template(); ?>
-		</article> 
-	<?php endwhile; // End the loop ?>
+
+	<div class="slider-for">
+		<div><p>Test text here</p></div>
+		<div><p>Test text here</p></div>
+		<div><p>Test text here</p></div>
+		<div><p>Test text here</p></div>
+		<div><p>Test text here</p></div>
+	</div>
+	
+	<div class="slider-nav">
+		<div><p>Test text here</p></div>
+		<div><p>Test text here</p></div>
+		<div><p>Test text here</p></div>
+		<div><p>Test text here</p></div>
+		<div><p>Test text here</p></div>
+	</div>
 
 	</div>
 </div>
+
+
+<script type="text/javascript">
+
+</script>
+
 <?php get_footer(); ?>
