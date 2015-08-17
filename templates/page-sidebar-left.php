@@ -27,7 +27,10 @@ get_header(); ?>
                     <p><?php the_tags(); ?></p>
                 </footer>
                 <?php do_action( 'foundationpress_page_before_comments' ); ?>
-                <?php comments_template(); ?>
+                <?php
+    			//Let's just take this out for now, since we don't really want comments on pages, per say
+    			//comments_template();
+    			?>
                 <?php do_action( 'foundationpress_page_after_comments' ); ?>
             </article>
         
