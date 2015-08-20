@@ -23,7 +23,7 @@ get_header(); ?>
 				<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
 				<p><?php the_tags(); ?></p>
 			</footer>
-			<<?php
+			<?php
 			//Let's just take this out for now, since we don't really want comments on pages, per say
 			//comments_template();
 			?>
