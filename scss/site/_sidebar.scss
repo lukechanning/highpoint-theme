@@ -1,5 +1,12 @@
 #sidebar {
-    margin-bottom: 2rem;
+    .widget_text {
+        &:first-of-type {
+            margin-top: 0;
+        }
+        &:last-of-type {
+            margin-bottom: 2rem;
+        }
+    }
     .widget-container {
         position: relative;
         text-align: center;
