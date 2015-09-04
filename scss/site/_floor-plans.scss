@@ -7,6 +7,7 @@ body.page-template-floor-plans {
         border-bottom: 1px solid rgba(25,25,25,0.25);
         .slick-slide {
             cursor: pointer;
+            margin: 0 1rem;
         }
         img {
             margin: 0 auto;
@@ -38,6 +39,13 @@ body.page-template-floor-plans {
     .info-header {
         font-weight: 800;
         font-size: 1.1rem;
+    }
+    
+    //Finally, letś slap that button around
+    
+    .gradButton {
+        width: 85%;
+        margin: 0 1rem;
     }
 
 
