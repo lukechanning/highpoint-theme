@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 100vh;
+  height: 75vh;
   text-align: center;
   &:before {
     content: '';
@@ -21,19 +21,27 @@
     top: rem-calc(80px);
     top: 8vh;
   }
+  .slider-text {
+    position: relative;
+    max-width: 65%;
+    margin: 2rem auto 0 auto;
+  }
+  .read-more {
+    color: $white;
+  }
   h1 {
-    color: #fff;
+    color: $white;
     font-size: 1.5rem;
     line-height: 1.5em;
     letter-spacing: -0.025em;
     font-weight: 300;
-    text-align: center;
+    text-align: center !important;
   }
   p {
-    color: #fff;
+    color: $white;
     line-height: 1.75em;
     font-weight: 200;
-    text-align: center;
+    text-align: center !important;
     margin-bottom: 2rem;
   }
   .tech-img {
@@ -52,7 +60,8 @@
     h1 {
       padding-top: 2.5rem;
       text-align: right;
-      font-size: 2.5rem;
+      font-size: 3.5rem;
+      font-weight: 600;
     }
     p {
       text-align: right;
@@ -88,10 +97,11 @@
     }
   }
   @media only screen and (max-width: 600px) {
+    .button-group {
+      padding: 0 1rem;
+    }
     .button-group:before {
       display: none;
     }
   }
-
-  
 }

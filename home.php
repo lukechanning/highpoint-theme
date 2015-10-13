@@ -6,17 +6,8 @@ get_header();
 
 <?php //Let's add our Hero section ?>
   
-  <section class="hero" style="
-  <?php
-  if( get_theme_mod( 'squarefoot_hero_bg') ) :
-      echo 'background-image:url(' . esc_url( get_theme_mod( 'squarefoot_hero_bg' ) ) . ');';
-    else : 
-      echo 'background-image: url(https://download.unsplash.com/38/HBzQnOQ6CWhlNi1YwAxZ_italy.jpg);"';
-    endif;
-    ?>
-    ">
-    <?php get_template_part( 'parts/home-hero' ); ?>
-    
+  <section class="hero">
+    <?php get_template_part( 'parts/home-slider' ); ?>
   </section>
 
 <?php //Now, let's throw in our middle text & photo section ?>

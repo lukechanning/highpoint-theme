@@ -48,17 +48,6 @@ function foundationpress_sidebar_widgets() {
 	  'before_title' => '<h6>',
 	  'after_title' => '</h6>',
 	));
-	
-	register_sidebar(array(
-	  'id' => 'home-hero',
-	  'name' => __( 'Home Hero', 'foundationpress' ),
-	  'description' => __( 'Add a text widget to the Home Hero section', 'foundationpress' ),
-	  'before_title' => '<h1>',
-	  'after_title' => '</h1>',
-	  'before_widget' => '<div>',
-	  'after_widget' => '</div>',
-	));
-
 
 	register_sidebar(array(
 	  'id' => 'home-hero-buttons',

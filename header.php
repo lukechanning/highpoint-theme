@@ -22,6 +22,11 @@
 	          echo '<link rel="stylesheet" href="'. get_stylesheet_directory_uri() .'/custom.css">';
 	     endif;
 		?>
+		
+		<!-- Add the Owl Carousel -->
+		<link rel="stylesheet" href="/wp-content/themes/squarefoot/bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
+		<link rel="stylesheet" href="/wp-content/themes/squarefoot/bower_components/owl.carousel/dist/assets/owl.theme.default.min.css" />
+
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/favicon.ico" type="image/x-icon">
 		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/apple-touch-icon-144x144-precomposed.png">
