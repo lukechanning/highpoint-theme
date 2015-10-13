@@ -15,6 +15,13 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Enable the option to use Custom css on deploy -->
+		<?php
+		 $located = locate_template( 'custom.css' );
+	     if ($located != '' ) :
+	          echo '<link rel="stylesheet" href="'. get_stylesheet_directory_uri() .'/custom.css">';
+	     endif;
+		?>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/favicon.ico" type="image/x-icon">
 		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/apple-touch-icon-144x144-precomposed.png">
