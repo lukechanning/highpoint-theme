@@ -68,7 +68,7 @@
           }
           
           .image-overlay-content {
-            background-image: url(http://subtlepatterns.com/patterns/footer_lodyas.png);
+            background-image: url(#{$themeURL}assets/img/footer_lodyas.png);
             background-color: rgba(0,0,0,0.3);
             transform: translateX(-110%);
             opacity: 1;
